@@ -28,4 +28,4 @@ while True:
 
     angle = potVal * (180/65535)
     my_servo.angle = angle
-    time.sleep(0.05)
+    time.sleep(1)
