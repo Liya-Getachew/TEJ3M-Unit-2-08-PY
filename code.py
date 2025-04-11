@@ -24,8 +24,11 @@ my_servo = servo.Servo(pwm, min_pulse = 650, max_pulse = 2500)
 while True:
     print((potentionmeter.value))
     potVal = potentionmeter.value
+
+    # shows value of the potentiometer
     print(potVal)
 
+    # changes range from 0-65535 to 0-180
     angle = potVal * (180/65535)
     my_servo.angle = angle
     time.sleep(1)
